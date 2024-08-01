@@ -1,9 +1,16 @@
-def notas(nota1,nota2,nota3):
-    notas =  (nota1 + nota2 + nota3) / 3
-    return notas
+#lista 
 
-nota1 = float(input("Digite a primeira nota:"))
-nota2 = float(input("Digite a segunda nota:"))
-nota3 = float(input("Digite a terceira nota:"))
-notas = notas(nota1,nota2,nota3)
-print(f"A área do quadrado é {notas}")
+def somaLista(lista):
+    soma = 0
+    i = 0
+    while True:
+        if i >= len(lista):
+            break
+        soma += lista[i]
+        i += 1
+    return soma
+
+
+lista = [1, 2, 3, 4, 5]
+resultado = somaLista(lista)
+print("Soma da lista é:", resultado)
